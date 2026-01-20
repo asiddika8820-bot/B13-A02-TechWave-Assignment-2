@@ -6,29 +6,41 @@
     <title>Techwave</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
+
 <body class="bg-black w-[100%] h-[100%]">
 <header>
   <!-- NAVBAR -->
   <div class=" p-5  flex border m-auto w-[100%]">
     <div>
         <ul>
-        <li class="text-4xl font-bold text-white"><a href="#">Tech <span class="bg-gradient-to-r from-[#9100F8] to-[#FF3CAC]bg-clip-text text-transparent"> Wave</span></a></li></ul>
+        <li class="text-4xl font-bold text-white"><a href="#">Tech  <span class="ml-2 bg-gradient-to-r from-[#9100F8] to-[#FF3CAC]
+         bg-clip-text text-transparent">
+      Wave
+        </a></span></li></ul>
     </div>
   <!-- Menu -->
-      <ul class=" text-center flex  gap-10 mx-auto text-white font-medium">
+   <div class="flex-1 flex justify-center">
+      <ul class="hidden lg:flex gap-10 text-white font-medium">
         <li><a href="#">About</a></li>
         <li><a href="#">Episodes</a></li>
         <li><a href="#">Host</a></li>
       </ul>
+    </div>
 
-      <!-- Button -->
-      <button class="ml-auto rounded-3xl bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] w-[135px] h-[44px] text-white font-semibold ">
-       contact us
-      </button>
+      <!-- Button test -->
+      <button class="hidden lg:block lg:ml-auto rounded-3xl bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] w-[135px] h-[44px] text-white font-semibold">
+         Contact Us
+     </button>
+     <button class="lg:hidden ml-auto">
+     <img src="./assets/hamburger-menu.png">
+     </button>
+      <!---<div class-="sm: bg-[url(./assets/hamburger-menu.png)]"> </div>">--->
+      
       </div>
-      </div>
+      
 <section >
-     <div class="relative bg-[url(./assets/hero-bg.png)] h-[950px] mx-auto bg-no-repeat">
+     <div class="relative bg-[url(./assets/hero-bg.png)] h-[750px] mx-auto bg-no-repeat">
     
         <div class=" bg-[url(./assets/hero-circle.png)] w-[400px] h-[400px] mx-auto p-9 bg-no-repeat bg-center">
         <div class="mx-[110px] mt-[50px] w-[200px] h-[200px]">
@@ -41,7 +53,7 @@
             <p class="text-center pb-5">Your daily dose of tech insights, productivity hacks,and personal growth</p>
            
     </div>
-    <div class="text-white flex gap-4 justify-center">
+    <div class="lg: text-white flex gap-4 justify-center">
   
   <button
     class="w-[201px] h-[50px] rounded-lg bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] flex items-center justify-center gap-2"
@@ -58,22 +70,25 @@
 </div>
         
 
-/* about the podcast */
 
-<div class="text-white text-center">
- <h1 class="text-4xl">
+<!----about the podcast --> -> 
+
+
+<div class=" text-white text-center">
+ <h1 class="text-xl sm:text-2xl font-semibold lg:text-4xl ">
     About the Podcast
 
  </h1>
- <p class="px-[100px]">
+ <p class="px-[40px] sm:px-[20px] ">
      TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders. Join thousands of young professionals and tech enthusiasts who start their day with TechWave. 
 </p>
 
+<!----->
 </div>
- <div class="flex gap-15  justify-center p-5">   
+ <div class=" grid grid-cols-2 gap-6 sm:grid-cols-2 lg:flex lg:justify-center p-5">   
 <div>
     <h1 class="text-green-700  text-4xl font-bold">150k</h1>
-    <py class="text-white">Monthly Listeners </p>
+    <p class="text-white">Monthly Listeners </p>
    
 </div>
 
@@ -101,11 +116,11 @@
 </header>
 <!---------------Why choose tech wave------------------------------------->
 
-<section class="bg-[#250D44]  text-white ">
-  <h1 class="pt-[120px] text-4xl font-bold text-center">
+<section class="bg-[#250D44]  text-white sm:my-auto">
+  <h1 class="pt-24  sm:text-3xl lg:text-4xl font-bold text-center" >
     Why choose Tech Wave
   </h1>
-  <div class="px-[200px] py-9 grid grid-cols-2 gap-5  ">
+  <div class="max-w-6xl mx-auto px-6 py-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3  ">
 
     <div class="w-[300px] h-[400px] rounded-2xl bg-[#210d3f] px-[30px] pt-[40px]">
       <img class="h-[20px] w-[20px]" src="./assets/headphone.png">
@@ -163,7 +178,7 @@
 
   <div class="grid grid-cols-3 gap-5 justify-center pt-9 px-[120px] shadow-xl">
      <div class=" px-3 py-3 rounded-md bg-[#250D44]">
-        <iframe  class="rounded-lg " width="380" height="214" src="https://www.youtube.com/embed/TobP_BB6RHw?si=QonYbFXerACSZ7dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"> Future of AI</iframe>
+        <iframe  class="rounded-lg " width="100%" height="214" src="https://www.youtube.com/embed/TobP_BB6RHw?si=QonYbFXerACSZ7dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"> Future of AI</iframe>
            <h1 class="font-semibold text-white text-2xl p-2">How to create a Website</h1>
          <p class="p-2">
             Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.
@@ -174,7 +189,7 @@
      </div>
 
      <div class="px-3 py-3 rounded-md bg-[#250D44]">
-        <iframe width="380" height="214" src="https://www.youtube.com/embed/qVSnBT628Sg?si=h_RBLxXN30eGArQX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"> Future of AI</iframe>
+        <iframe width="100%" height="214" src="https://www.youtube.com/embed/qVSnBT628Sg?si=h_RBLxXN30eGArQX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"> Future of AI</iframe>
          <h1 class="font-semibold text-white text-2xl p-2">How to create a Website</h1>
          <p class="p-2">
             Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.
@@ -185,7 +200,7 @@
      </div>
 
      <div class=" py-3 rounded-md bg-[#250D44]">
-        <iframe width="380" height="214" src="https://www.youtube.com/embed/CQZxeoQeo5c?si=eZRU2UmiBpToOc4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <iframe width="100%" height="214" src="https://www.youtube.com/embed/CQZxeoQeo5c?si=eZRU2UmiBpToOc4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
         <h1 class="font-semibold text-white text-2xl p-2">How to create a Website</h1>
          <p class="p-2">
@@ -231,7 +246,7 @@
   </div>
   <div class= "flex justify-center">
   <ul class="flex gap-7 text-white ">
-    <li class="flex items-center gap-2"></li><img src="./assets/spotify.png">Spotify</li>
+    <li class="flex items-center gap-2"><img src="./assets/spotify.png">Spotify</li>
     <li class="flex items-center gap-2"><img src="./assets/apple-podcast.png">Apple product</li>
     <li class="flex items-center gap-2"><img src="./assets/youtube-podcast.png">youtube</li>
     <li class="flex items-center gap-2"></li><img src="./assets/twitter.png">twiter</li>
